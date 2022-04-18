@@ -1,11 +1,13 @@
-require 'passage'
 
 class DashboardController < ApplicationController
 
-  before_action :authenticate_request
+  before_action :authorize!, except: %i[unauthorized]
 
-  def index
+  def authorized
     puts(session[:psg_user_id])
-    @test = session[:psg_user_id]
+    @user = session[:psg_user_id]
+  end
+
+  def unauthorized
   end
 end

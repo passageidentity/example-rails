@@ -72,10 +72,14 @@
     flex-grow: 1;
   }
     
-  .text {
+  .header-link {
     margin-right: 10px;
     color: white;
     text-decoration-color: white;
+    text-decoration: underline;
+  }
+
+  .body-link {
     text-decoration: underline;
   }
 

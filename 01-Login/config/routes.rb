@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   root 'home#show'
 
-  get '/dashboard' => 'dashboard#index'
+  get '/dashboard' => 'dashboard#authorized'
+  get '/unauthorized' => 'dashboard#unauthorized'
 end
