@@ -1,6 +1,11 @@
+require 'passage'
+
 class DashboardController < ApplicationController
-  #  include Secured
-    def show
-     # @user = session[:userinfo]
-    end
+
+  before_action :authenticate_request
+
+  def index
+    puts(session[:psg_user_id])
+    @test = session[:psg_user_id]
   end
+end

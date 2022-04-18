@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   root 'home#show'
 
-  get '/dashboard' => 'dashboard#show'
+  get '/dashboard' => 'dashboard#index'
 end
