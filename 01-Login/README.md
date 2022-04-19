@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This example builds an application with Ruby on Rails and uses Passage for authentication. It demonstrates the use of the passage-ruby gem authorized API requests and fetch user data from Passage.
 
-Things you may want to cover:
+This example uses Ruby 3.1.1.
 
-* Ruby version
+## Setting up environment variables
 
-* System dependencies
+Copy the `EXAMPLE.env` file into your own `.env` file. Add your application ID for Passage, which can be found in the Passage Console.
 
-* Configuration
+## Running the example
 
-* Database creation
+Run with Docker
 
-* Database initialization
 
-* How to run the test suite
+Run without Docker:
+```
+rbenv exec bundle install
+rbenv exec rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

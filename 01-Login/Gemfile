@@ -7,7 +7,8 @@ ruby "3.1.1"
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 
 # TODO FOR LOCAL TESTING
-gem "passage", path: "../../passage-ruby"
+gem "passageidentity", path: "./gems/"
+#gem "passageidentity", ">= 0.0.1"
 
 # env vars for dev environment
 gem 'dotenv-rails', groups: [:development, :test]
