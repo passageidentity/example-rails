@@ -1,0 +1,564 @@
+Started GET "/home" for ::1 at 2022-04-16 12:27:21 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/" for ::1 at 2022-04-16 12:27:23 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 19539)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms | Allocations: 23346)
+
+
+  
+ActionView::Template::Error (link_tree argument must be a directory):
+  
+app/assets/config/manifest.js:4
+Started GET "/" for ::1 at 2022-04-16 12:29:30 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 340)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 5539)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 8698)
+
+
+  
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/annapobletts/code/example-rails/passage/app/assets/config
+  /Users/annapobletts/code/example-rails/passage/app/assets/images
+  /Users/annapobletts/code/example-rails/passage/app/assets/javascripts
+  /Users/annapobletts/code/example-rails/passage/app/assets/stylesheets
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/stimulus-rails-1.0.4/app/assets/javascripts
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/turbo-rails-1.0.1/app/assets/javascripts
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/importmap-rails-1.0.3/app/assets/javascripts
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actiontext-7.0.2.3/app/assets/javascripts
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actiontext-7.0.2.3/app/assets/stylesheets
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actioncable-7.0.2.3/app/assets/javascripts
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/activestorage-7.0.2.3/app/assets/javascripts
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actionview-7.0.2.3/lib/assets/compiled
+  /Users/annapobletts/code/example-rails/passage/app/javascript
+  /Users/annapobletts/code/example-rails/passage/vendor/javascript):
+     7:   <%= yield :cdn_code %>
+     8:   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' %>
+     9:   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
+    10:   <%= javascript_include_tag 'application' %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-04-16 12:29:32 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 3456)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3741)
+
+
+  
+ActionView::Template::Error (couldn't find file 'turbolinks' with type 'application/javascript'
+Checked in these paths: 
+  /Users/annapobletts/code/example-rails/passage/app/assets/config
+  /Users/annapobletts/code/example-rails/passage/app/assets/images
+  /Users/annapobletts/code/example-rails/passage/app/assets/javascripts
+  /Users/annapobletts/code/example-rails/passage/app/assets/stylesheets
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/stimulus-rails-1.0.4/app/assets/javascripts
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/turbo-rails-1.0.1/app/assets/javascripts
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/importmap-rails-1.0.3/app/assets/javascripts
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actiontext-7.0.2.3/app/assets/javascripts
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actiontext-7.0.2.3/app/assets/stylesheets
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actioncable-7.0.2.3/app/assets/javascripts
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/activestorage-7.0.2.3/app/assets/javascripts
+  /Users/annapobletts/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/actionview-7.0.2.3/lib/assets/compiled
+  /Users/annapobletts/code/example-rails/passage/app/javascript
+  /Users/annapobletts/code/example-rails/passage/vendor/javascript):
+     7:   <%= yield :cdn_code %>
+     8:   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' %>
+     9:   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
+    10:   <%= javascript_include_tag 'application' %>
+    11:   <%= csrf_meta_tags %>
+    12: </head>
+    13: <body>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-04-16 12:30:00 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 202.5ms | Allocations: 79193)
+Completed 200 OK in 203ms (Views: 202.9ms | ActiveRecord: 0.0ms | Allocations: 79516)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:34:21 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 2569)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3360)
+
+
+  
+ActionView::Template::Error (The asset "assets/stylesheets/application.css" is not present in the asset pipeline.
+):
+     7:   <%= yield :cdn_code %>
+     8:   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' %>
+     9:   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
+    10:   <%= stylesheet_link_tag    'assets/stylesheets/application.css' %>
+    11:   <%= javascript_include_tag 'application' %>
+    12:   <%= csrf_meta_tags %>
+    13: </head>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-04-16 12:34:27 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 4593)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 5407)
+
+
+  
+ActionView::Template::Error (undefined method `start_with?' for nil:NilClass
+
+      if subpath.start_with?(path)
+                ^^^^^^^^^^^^):
+     7:   <%= yield :cdn_code %>
+     8:   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' %>
+     9:   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
+    10:   <%= stylesheet_link_tag    './assets/stylesheets/application.css' %>
+    11:   <%= javascript_include_tag 'application' %>
+    12:   <%= csrf_meta_tags %>
+    13: </head>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-04-16 12:34:39 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 4526)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 5344)
+
+
+  
+ActionView::Template::Error (undefined method `start_with?' for nil:NilClass
+
+      if subpath.start_with?(path)
+                ^^^^^^^^^^^^):
+     7:   <%= yield :cdn_code %>
+     8:   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' %>
+     9:   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
+    10:   <%= stylesheet_link_tag    '../../assets/stylesheets/application.css' %>
+    11:   <%= javascript_include_tag 'application' %>
+    12:   <%= csrf_meta_tags %>
+    13: </head>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2022-04-16 12:35:52 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2726)
+Completed 200 OK in 6ms (Views: 4.9ms | Allocations: 3565)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:36:21 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2726)
+Completed 200 OK in 6ms (Views: 5.2ms | Allocations: 3561)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 12:36:22 -0500
+Processing by DashboardController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/show.html.erb within layouts/application
+  Rendered dashboard/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 151)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2465)
+Completed 200 OK in 5ms (Views: 4.3ms | Allocations: 3222)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:36:23 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2078)
+Completed 200 OK in 4ms (Views: 3.2ms | Allocations: 2361)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:42:24 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2677)
+Completed 200 OK in 5ms (Views: 4.7ms | Allocations: 3510)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:42:38 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2695)
+Completed 200 OK in 6ms (Views: 5.2ms | Allocations: 3530)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:42:45 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2670)
+Completed 200 OK in 5ms (Views: 4.8ms | Allocations: 3505)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 12:43:13 -0500
+Processing by DashboardController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/show.html.erb within layouts/application
+  Rendered dashboard/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 151)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2677)
+Completed 200 OK in 6ms (Views: 5.4ms | Allocations: 3511)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 12:44:04 -0500
+Processing by DashboardController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/show.html.erb within layouts/application
+  Rendered dashboard/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3592)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 3874)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 12:44:42 -0500
+Processing by DashboardController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/show.html.erb within layouts/application
+  Rendered dashboard/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2673)
+Completed 200 OK in 6ms (Views: 5.6ms | Allocations: 3490)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 12:45:14 -0500
+Processing by DashboardController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/show.html.erb within layouts/application
+  Rendered dashboard/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 151)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 4237)
+Completed 200 OK in 10ms (Views: 8.7ms | Allocations: 5072)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 12:45:28 -0500
+Processing by DashboardController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/show.html.erb within layouts/application
+  Rendered dashboard/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3517)
+Completed 200 OK in 8ms (Views: 7.5ms | Allocations: 3799)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 12:45:53 -0500
+Processing by DashboardController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/show.html.erb within layouts/application
+  Rendered dashboard/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 151)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2673)
+Completed 200 OK in 5ms (Views: 4.4ms | Allocations: 3490)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 12:47:07 -0500
+Processing by DashboardController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/show.html.erb within layouts/application
+  Rendered dashboard/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 151)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2742)
+Completed 200 OK in 6ms (Views: 5.2ms | Allocations: 3577)
+
+
+Started GET "/dashboard" for ::1 at 2022-04-16 12:52:34 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by DashboardController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/show.html.erb within layouts/application
+  Rendered dashboard/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 339)
+  Rendered layout layouts/application.html.erb (Duration: 66.0ms | Allocations: 30460)
+Completed 200 OK in 73ms (Views: 68.4ms | ActiveRecord: 0.0ms | Allocations: 33667)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:52:37 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 180)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2489)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3268)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:52:39 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2089)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2380)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:52:43 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2068)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2335)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:52:54 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2722)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 3568)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:53:11 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2705)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3560)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:57:16 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2064)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2350)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:57:29 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 369)
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | Allocations: 25369)
+Completed 200 OK in 57ms (Views: 52.1ms | ActiveRecord: 0.0ms | Allocations: 28578)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:57:45 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2150)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2484)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:57:56 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 369)
+  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 25538)
+Completed 200 OK in 55ms (Views: 50.2ms | ActiveRecord: 0.0ms | Allocations: 28747)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:58:37 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2692)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 3569)
+
+
+Started GET "/" for ::1 at 2022-04-16 12:59:12 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 174)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2694)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 3539)
+
+
+Started GET "/" for ::1 at 2022-04-16 13:00:50 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 369)
+  Rendered layout layouts/application.html.erb (Duration: 49.8ms | Allocations: 25596)
+Completed 200 OK in 56ms (Views: 52.0ms | ActiveRecord: 0.0ms | Allocations: 28806)
+
+
+Started GET "/" for ::1 at 2022-04-17 09:23:24 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 369)
+  Rendered layout layouts/application.html.erb (Duration: 73.2ms | Allocations: 27401)
+Completed 200 OK in 82ms (Views: 76.4ms | ActiveRecord: 0.0ms | Allocations: 30610)
+
+
+Started GET "/" for ::1 at 2022-04-17 09:32:14 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 366)
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 25387)
+Completed 200 OK in 59ms (Views: 53.0ms | ActiveRecord: 0.0ms | Allocations: 28596)
+
+
+Started GET "/" for ::1 at 2022-04-17 09:32:26 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2227)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2561)
+
+
+Started GET "/" for ::1 at 2022-04-17 09:33:02 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2718)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3566)
+
+
+Started GET "/" for ::1 at 2022-04-17 09:39:59 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 373)
+  Rendered layout layouts/application.html.erb (Duration: 44.8ms | Allocations: 22369)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.0ms | Allocations: 25624)
+
+
+  
+ActionView::Template::Error (link_tree argument must be a directory):
+  
+app/assets/config/manifest.js:3
+Started GET "/" for ::1 at 2022-04-17 09:40:28 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 60.9ms | Allocations: 40343)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms | Allocations: 40621)
+
+
+  
+ActionView::Template::Error (Asset `application.js` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link application.js
+
+and restart your server):
+     8:   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' %>
+     9:   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
+    10:   <%= stylesheet_link_tag "application", :media => "all" %>
+    11:   <%= javascript_include_tag 'application' %>
+    12:   <%= csrf_meta_tags %>
+    13: </head>
+    14: <body>
+  
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2022-04-17 09:40:29 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 19915)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms | Allocations: 20151)
+
+
+  
+ActionView::Template::Error (Asset `application.js` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link application.js
+
+and restart your server):
+     8:   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' %>
+     9:   <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
+    10:   <%= stylesheet_link_tag "application", :media => "all" %>
+    11:   <%= javascript_include_tag 'application' %>
+    12:   <%= csrf_meta_tags %>
+    13: </head>
+    14: <body>
+  
+app/views/layouts/application.html.erb:11
+Started GET "/" for ::1 at 2022-04-17 09:41:03 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 12716)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 14118)
+
+
+  
+ActionView::Template::Error (link_tree argument must be a directory):
+  
+app/assets/config/manifest.js:3
+Started GET "/" for ::1 at 2022-04-17 09:41:43 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 9373)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 10610)
+
+
+  
+ActionView::Template::Error (link_tree argument must be a directory):
+  
+app/assets/config/manifest.js:3
+Started GET "/" for ::1 at 2022-04-17 09:41:44 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 8941)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 9398)
+
+
+  
+ActionView::Template::Error (link_tree argument must be a directory):
+  
+app/assets/config/manifest.js:3
+Started GET "/" for ::1 at 2022-04-17 09:41:52 -0500
+Processing by HomeController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 20099)
+Completed 200 OK in 29ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 20409)
+
+

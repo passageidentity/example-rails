@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Passage - Rails Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= yield :cdn_code %>
+  <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' %>
+  <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <div class="main-header">
+      <a href="https://passage.id/" passHref><div class="passage-logo"></div></a>
+      <div class="header-text">Passage + Rails Example App</div>
+      <div class="spacer"></div>
+      <a href="https://passage.id/" passHref><span class="header-link">Go to Passage</span></a>
+    </div>
+
+    <div class="main-container">
+      <%= yield %>
+    </div>
+        
+    <div class="footer">
+      Learn more with our 
+      <a href="https://docs.passage.id">Documentation</a> and
+      <a href="https://github.com/passageidentity">Github</a>.
+      <br>
+    </div>
+</body>
+</html>
