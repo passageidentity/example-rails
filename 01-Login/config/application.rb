@@ -21,5 +21,6 @@ module Passage
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
     config.passage_app_id = ENV['PASSAGE_APP_ID']
+    config.passage_api_key = ENV['PASSAGE_API_KEY']
   end
 end
