@@ -160,7 +160,7 @@ GEM
     nokogiri (1.13.4-x86_64-darwin)
       racc (~> 1.4)
     openssl (3.0.0)
-    passageidentity (0.0.2)
+    passageidentity (0.0.3)
       faraday (>= 0.17.0, < 2.0)
       jwt (>= 2.3.0)
       openssl (>= 3.0.0)
