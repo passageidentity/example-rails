@@ -11,9 +11,6 @@ class ApplicationController < ActionController::Base
     def authorize!
       begin
         @user_id = PassageClient.auth.authenticate_request(request)
-        user = PassageClient.user.get(user_id: @user_id)
-        session[:psg_username] = user.email
-        session[:psg_username] = user.phone if user.email.nil? || user.email.empty?
       rescue Exception => e
         redirect_to "/unauthorized"
       end
